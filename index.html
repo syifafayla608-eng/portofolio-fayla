@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fayla Syifa Rustam — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">Fayla<em>.</em></div>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-deco hero-deco-1"></div>
+  <div class="hero-deco hero-deco-2"></div>
+
+  <div class="hero-left">
+    <div class="hero-sup">Portfolio 2025</div>
+    <h1 class="hero-name">
+      Fayla Syifa<em>Rustam ✦</em>
+    </h1>
+    <p class="hero-subtitle">Mahasiswi Informatika · <span id="heroTyped"></span></p>
+    <p class="hero-desc">Passionate tentang teknologi, algoritma, dan membangun solusi digital yang nyata. Aktif berorganisasi, terus belajar, dan K-pop adalah fuel coding session ✨</p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-rose">Lihat Proyek →</a>
+      <a href="#contact" class="btn btn-ghost">Hubungi Saya</a>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="hero-photo-wrap">
+      <div class="hero-photo-frame">
+        <img class="hero-photo-img" src="fyla.jpeg" alt="Fayla Syifa Rustam" />
+      </div>
+      <div class="hero-float-badge badge-1">
+        <div class="badge-dot"></div>
+        Aktif Belajar
+      </div>
+      <div class="hero-float-badge badge-2">
+        🎵 K-pop
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="sec-eyebrow">about me</div>
+  <h2 class="sec-title">Siapa <em>Fayla?</em></h2>
+  <div class="about-grid">
+    <div class="reveal">
+      <div class="about-card" style="width:100%; box-sizing:border-box;">
+        <div style="display:flex; gap:2rem; align-items:flex-start; flex-wrap:wrap;">
+          <div class="about-avatar" style="width:160px; min-width:160px; height:200px;">
+            <img src="me.jpeg" alt="Fayla" />
+          </div>
+          <div class="info-list" style="flex:1; min-width:0; overflow-wrap:break-word;">
+            <div class="info-row"><span class="info-key">Nama</span><span class="info-val">Fayla Syifa Rustam</span></div>
+            <div class="info-row"><span class="info-key">TTL</span><span class="info-val">Banda Aceh, 06 Juni 2006</span></div>
+            <div class="info-row"><span class="info-key">Kampus</span><span class="info-val">S1 Informatika · FMIPA USK</span></div>
+            <div class="info-row"><span class="info-key">Domisili</span><span class="info-val">Banda Aceh 🇮🇩</span></div>
+            <div class="info-row"><span class="info-key">Status</span><span class="info-val" style="color:#7bd47b">● Mahasiswi Aktif</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-text reveal reveal-delay-1">
+      <p>Halo! Saya <strong>Fayla Syifa Rustam</strong> — mahasiswi Informatika di Universitas Syiah Kuala yang punya passion besar di dunia teknologi, khususnya pemrograman dan pengembangan sistem.</p>
+      <p>Saya percaya teknologi adalah alat untuk menciptakan solusi bermakna. Itulah mengapa saya sangat tertarik pada <em>Struktur Data & Algoritma</em> — fondasi dari semua yang kita bangun secara digital.</p>
+      <p>Di luar kelas, saya aktif di <strong>Novoclub</strong> dan <strong>HMI Divisi MBA</strong>, yang melatih kemampuan komunikasi, kepemimpinan, dan kerja tim. Saya juga K-pop enthusiast dan selalu excited eksplorasi teknologi baru!</p>
+      <div class="chip-group">
+        <span class="chip">🎯 Problem Solver</span>
+        <span class="chip">💻 Tech Lover</span>
+        <span class="chip">🎵 K-pop Stan</span>
+        <span class="chip">📚 Always Learning</span>
+        <span class="chip">🤝 Team Player</span>
+        <span class="chip">⚡ Detail-Oriented</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="sec-eyebrow">moments</div>
+  <div class="gallery-header">
+    <h2 class="sec-title">Gallery <em>& Memories</em></h2>
+    <div class="gallery-filter">
+      <button class="filter-btn active" onclick="filterGallery('all', this)">Semua</button>
+      <button class="filter-btn" onclick="filterGallery('friends', this)">Teman</button>
+      <button class="filter-btn" onclick="filterGallery('event', this)">Event</button>
+      <button class="filter-btn" onclick="filterGallery('campus', this)">Kampus</button>
+    </div>
+  </div>
+  <div class="gallery-masonry reveal" id="galleryGrid">
+
+    <div class="gal-item" data-cat="friends" onclick="openLightbox(this)">
+      <img src="sirkel.jpeg" alt="Bareng teman" />
+      <div class="gal-overlay"><div class="gal-caption">Momen bareng teman 🌸</div></div>
+    </div>
+    <div class="gal-item" data-cat="event" onclick="openLightbox(this)">
+      <img src="bukber.jpeg" alt="bukberrr" />
+      <div class="gal-overlay"><div class="gal-caption">sama amy ✨</div></div>
+    </div>
+    <div class="gal-item" data-cat="campus" onclick="openLightbox(this)">
+      <img src="KL.jpeg" alt="TRX" />
+      <div class="gal-overlay"><div class="gal-caption">malming di TRX 📚</div></div>
+    </div>
+    <div class="gal-item" data-cat="friends" onclick="openLightbox(this)">
+      <img src="MBA.jpeg" alt="" />
+      <div class="gal-overlay"><div class="gal-caption">himpunan 💕</div></div>
+    </div>
+    <div class="gal-item" data-cat="event" onclick="openLightbox(this)">
+      <img src="pantai.jpeg" alt="mantai" />
+      <div class="gal-overlay"><div class="gal-caption">maha corner 🌟</div></div>
+    </div>
+    <div class="gal-item" data-cat="friends" onclick="openLightbox(this)">
+      <img src="cewe.jpeg" alt="cewe" />
+      <div class="gal-overlay"><div class="gal-caption">girls 💜</div></div>
+    </div>
+    <div class="gal-item" data-cat="campus" onclick="openLightbox(this)">
+      <img src="integer.jpeg" alt="integer" />
+      <div class="gal-overlay"><div class="gal-caption">sunset 🌟</div></div>
+    </div>
+    <div class="gal-item" data-cat="friends" onclick="openLightbox(this)">
+      <img src="sma.jpeg" alt="fotobooth" />
+      <div class="gal-overlay"><div class="gal-caption">photobooth ✨</div></div>
+    </div>
+    <div class="gal-item" data-cat="event" onclick="openLightbox(this)">
+      <img src="matcha.jpeg" alt="matcha" />
+      <div class="gal-overlay"><div class="gal-caption">love matcha 💕</div></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <div id="lbContent"></div>
+  <button class="lb-close" onclick="closeLightbox()">✕</button>
+</div>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="sec-eyebrow">tech stack</div>
+  <h2 class="sec-title">Skills <em>& Kemampuan</em></h2>
+  <div class="skills-layout">
+    <div>
+      <div class="skills-group-title">Technical Skills</div>
+      <div class="skills-group reveal">
+        <div class="skill-row"><span class="skill-emoji">🌐</span><div class="skill-info"><div class="skill-name">HTML & CSS</div><div class="skill-bar-wrap"><div class="skill-bar" data-w="82"></div></div></div><span class="skill-pct">82%</span></div>
+        <div class="skill-row"><span class="skill-emoji">⚡</span><div class="skill-info"><div class="skill-name">JavaScript</div><div class="skill-bar-wrap"><div class="skill-bar" data-w="78"></div></div></div><span class="skill-pct">78%</span></div>
+        <div class="skill-row"><span class="skill-emoji">🐍</span><div class="skill-info"><div class="skill-name">Python</div><div class="skill-bar-wrap"><div class="skill-bar" data-w="65"></div></div></div><span class="skill-pct">65%</span></div>
+        <div class="skill-row"><span class="skill-emoji">🧮</span><div class="skill-info"><div class="skill-name">DSA</div><div class="skill-bar-wrap"><div class="skill-bar" data-w="75"></div></div></div><span class="skill-pct">75%</span></div>
+        <div class="skill-row"><span class="skill-emoji">🗃️</span><div class="skill-info"><div class="skill-name">SQL</div><div class="skill-bar-wrap"><div class="skill-bar" data-w="60"></div></div></div><span class="skill-pct">60%</span></div>
+        <div class="skill-row"><span class="skill-emoji">🔧</span><div class="skill-info"><div class="skill-name">Git & GitHub</div><div class="skill-bar-wrap"><div class="skill-bar" data-w="68"></div></div></div><span class="skill-pct">68%</span></div>
+      </div>
+    </div>
+    <div>
+      <div class="skills-group-title" style="margin-bottom:1.2rem">Soft Skills</div>
+      <div class="soft-skills reveal reveal-delay-1">
+        <div class="soft-skill-card"><span class="soft-skill-icon">🤝</span><div><div class="soft-skill-name">Teamwork & Kolaborasi</div><div class="soft-skill-desc">Pengalaman kerja tim di Novoclub & HMI</div></div></div>
+        <div class="soft-skill-card"><span class="soft-skill-icon">🎯</span><div><div class="soft-skill-name">Problem Solving</div><div class="soft-skill-desc">Analitis dalam menghadapi tantangan teknis</div></div></div>
+        <div class="soft-skill-card"><span class="soft-skill-icon">📊</span><div><div class="soft-skill-name">Manajemen & Koordinasi</div><div class="soft-skill-desc">Perencanaan kegiatan dan koordinasi divisi</div></div></div>
+        <div class="soft-skill-card"><span class="soft-skill-icon">💬</span><div><div class="soft-skill-name">Komunikasi</div><div class="soft-skill-desc">Presentasi, diskusi, dan dokumentasi</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="sec-eyebrow">experience</div>
+  <h2 class="sec-title">Kegiatan <em>& Organisasi</em></h2>
+  <div class="timeline">
+    <div class="tl-item reveal">
+      <div class="tl-dot">🏛️</div>
+      <div class="tl-content">
+        <div class="tl-year">2024 — Sekarang</div>
+        <div class="tl-title">Anggota Aktif — Novoclub</div>
+        <div class="tl-org">Komunitas Teknologi & Inovasi</div>
+        <div class="tl-desc">Berpartisipasi aktif dalam komunitas Novoclub, berkolaborasi dalam kegiatan teknologi, inovasi digital, dan pengembangan diri bersama anggota lainnya.</div>
+      </div>
+    </div>
+    <div class="tl-item reveal reveal-delay-1">
+      <div class="tl-dot">🎓</div>
+      <div class="tl-content">
+        <div class="tl-year">2024 — Sekarang</div>
+        <div class="tl-title">Anggota Divisi MBA — HMI Informatika USK</div>
+        <div class="tl-org">Divisi Minat, Bakat & Alumni</div>
+        <div class="tl-desc">Terlibat dalam perencanaan dan pelaksanaan program kegiatan mahasiswa, pengembangan minat & bakat, serta koordinasi antar anggota himpunan.</div>
+      </div>
+    </div>
+    <div class="tl-item reveal reveal-delay-2">
+      <div class="tl-dot">💻</div>
+      <div class="tl-content">
+        <div class="tl-year">2024 — Sekarang</div>
+        <div class="tl-title">Mahasiswi S1 Informatika</div>
+        <div class="tl-org">FMIPA, Universitas Syiah Kuala</div>
+        <div class="tl-desc">Menempuh pendidikan di program studi Informatika dengan fokus pada pemrograman, algoritma, dan pengembangan sistem. Aktif mengerjakan proyek praktis.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="sec-eyebrow">projects</div>
+  <h2 class="sec-title">Karya <em>& Proyek</em></h2>
+  <div class="proj-grid">
+    <div class="proj-card reveal">
+      <div class="proj-cover proj-cover-1">🧺</div>
+      <div class="proj-body">
+        <div class="proj-name">WashUp Laundry System</div>
+        <div class="proj-desc">Sistem manajemen laundry digital — pencatatan pesanan, tracking status cucian, dan manajemen pelanggan secara modern dan efisien.</div>
+        <div class="proj-tags"><span class="ptag">HTML</span><span class="ptag">CSS</span><span class="ptag">JavaScript</span><span class="ptag accent">In Progress</span></div>
+        <a href="#" class="proj-link">Lihat Detail →</a>
+      </div>
+    </div>
+    <div class="proj-card reveal reveal-delay-1">
+      <div class="proj-cover proj-cover-2">🧮</div>
+      <div class="proj-body">
+        <div class="proj-name">Eksplorasi DSA</div>
+        <div class="proj-desc">Implementasi berbagai algoritma dan struktur data — sorting, searching, linked list, tree, graph — sebagai penerapan materi kuliah.</div>
+        <div class="proj-tags"><span class="ptag">Python</span><span class="ptag">C++</span><span class="ptag">Algorithm</span></div>
+        <a href="#" class="proj-link">Source Code →</a>
+      </div>
+    </div>
+    <div class="proj-card reveal reveal-delay-2">
+      <div class="proj-cover proj-cover-3">🌐</div>
+      <div class="proj-body">
+        <div class="proj-name">Portfolio Website</div>
+        <div class="proj-desc">Website portofolio personal ini — dibangun dengan HTML, CSS, dan JavaScript untuk menampilkan identitas dan karya secara profesional.</div>
+        <div class="proj-tags"><span class="ptag">HTML</span><span class="ptag">CSS</span><span class="ptag">JavaScript</span></div>
+        <a href="#" class="proj-link">GitHub Repo →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="sec-eyebrow">contact</div>
+  <h2 class="sec-title">Mari <em>Terhubung!</em></h2>
+  <div class="contact-layout">
+    <div class="contact-left reveal">
+      <p>Terbuka untuk diskusi, kolaborasi, atau ngobrol soal teknologi dan hal seru lainnya. Jangan ragu reach out ya! ✨</p>
+      <div class="soc-list">
+        <a href="https://mail.google.com/mail/?view=cm&to=syifafayla608@gmail.com" target="_blank" class="soc-item"><span class="soc-ico">📧</span><div class="soc-info"><div class="soc-platform">Email</div><div class="soc-handle">syifafayla608@gmail.com</div></div><span class="soc-arr">→</span></a>
+        <a href="https://tiktok.com/@anotherfaee" target="_blank" class="soc-item"><span class="soc-ico">🎵</span><div class="soc-info"><div class="soc-platform">TikTok</div><div class="soc-handle">@anotherfaee</div></div><span class="soc-arr">→</span></a>
+        <a href="https://instagram.com/faearchivess" target="_blank" class="soc-item"><span class="soc-ico">📸</span><div class="soc-info"><div class="soc-platform">Instagram</div><div class="soc-handle">@faearchivess</div></div><span class="soc-arr">→</span></a>
+        <a href="#" class="soc-item"><span class="soc-ico">🎮</span><div class="soc-info"><div class="soc-platform">Discord</div><div class="soc-handle">fayla2006_90571</div></div><span class="soc-arr">→</span></a>
+      </div>
+    </div>
+    <div class="reveal reveal-delay-1">
+      <div class="form">
+        <div class="form-group"><label>Nama</label><input type="text" class="form-input" placeholder="Nama kamu" /></div>
+        <div class="form-group"><label>Email</label><input type="email" class="form-input" placeholder="email@kamu.com" /></div>
+        <div class="form-group"><label>Pesan</label><textarea class="form-textarea" placeholder="Hei Fayla, aku mau ngobrol tentang..."></textarea></div>
+        <button class="btn btn-rose" id="sendBtn" onclick="handleSend()" style="width:100%;justify-content:center;">Kirim Pesan ✉</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-logo">Fayla.</div>
+  <div class="footer-copy">© 2026 · Made with <span class="heart">♥</span> by Fayla Syifa Rustam</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
