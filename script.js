@@ -79,7 +79,7 @@ function handleSend() {
   btn.textContent = 'Mengirim...';
   btn.disabled = true;
 
-  emailjs.send('service_o0p4mx7', 'template_6zropb7', {
+emailjs.send('service_nslm1h6', 'template_6zropb7', {
     name: nama,
     email: email,
     message: pesan,
